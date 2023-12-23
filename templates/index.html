@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block title %}
+Name input
+{% endblock %}
+
+{% block body %}
+<form class="row g-3 p-3" action="/greet" method="POST">
+  <div class="col-auto">
+    <label for="greeting-input" class="visually-hidden">Who to greet</label>
+    <input type="text" name="name" class="form-control" id="greeting-input" placeholder="Petrovich" autocomplete="off" autofocus>
+  </div>
+  <div class="col-auto">
+    <button type="submit" class="btn btn-primary mb-3">Greet</button>
+  </div>
+</form>
+{% endblock %}
